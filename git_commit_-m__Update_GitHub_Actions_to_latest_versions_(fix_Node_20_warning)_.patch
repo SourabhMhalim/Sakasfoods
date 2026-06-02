@@ -1,0 +1,23 @@
+Subject: [PATCH] git commit -m "Update GitHub Actions to latest versions (fix Node 20 warning)"
+---
+Index: .github/workflows/deploy.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.github/workflows/deploy.yml b/.github/workflows/deploy.yml
+--- a/.github/workflows/deploy.yml	(revision b41beb8bb530150117510312138788c8fa6eb3de)
++++ b/.github/workflows/deploy.yml	(revision 0a9b3683edd9f08c84a7de04742eb7ed2460deb1)
+@@ -11,10 +11,10 @@
+ 
+     steps:
+       - name: Checkout Code
+-        uses: actions/checkout@v4
++        uses: actions/checkout@v6
+ 
+       - name: Deploy to GoDaddy via FTP
+-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
++        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+         with:
+           server: ${{ secrets.FTP_SERVER }}
+           username: ${{ secrets.FTP_USERNAME }}

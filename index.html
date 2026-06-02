@@ -1,9 +1,14 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sakas Foods | Premium Flours, Spices and Ready-to-Eat</title>
+  
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>Sakas</title>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
   <meta
     name="description"
     content="Shop the Sakas Foods range with real product images, quick browsing, and direct support."
@@ -11,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Noto+Sans+Devanagari:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap"
     rel="stylesheet"
   />
   <link rel="stylesheet" href="./assets/styles.css" />
@@ -20,9 +25,8 @@
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="./index.html">
-        <img class="brand-logo" src="./assets/Logo.jpg" alt="Sakas Foods logo" />
         <div class="brand-text">
-          <strong>Sakas Foods</strong>
+        <img class="brand-logo" src="./assets/Logo.jpg" alt="Sakas Foods logo" />
           <small>Trusted in Pune since 1986</small>
         </div>
       </a>
@@ -37,7 +41,7 @@
 
   <main>
     <section class="hero">
-      <section class="catalog-banner reveal delay-1" data-slider data-slider-delay="1000">
+      <section class="catalog-banner reveal delay-1" data-slider data-slider-delay="3000">
         <div class="catalog-slides">
           <div class="catalog-slide" data-slide>
             <img src="./assets/banner1.png" alt="Sakas Foods catalog banner 1" />
@@ -60,8 +64,6 @@
             </p>
           </div>
         </div>
-        <button class="slider-btn slider-btn-prev" type="button" aria-label="Previous catalog banner" data-prev-slide>&#10094;</button>
-        <button class="slider-btn slider-btn-next" type="button" aria-label="Next catalog banner" data-next-slide>&#10095;</button>
         <div class="slider-dots" role="tablist" aria-label="Catalog banner selector">
           <button class="slider-dot" type="button" role="tab" aria-selected="false" aria-label="Show catalog banner 1" data-slide-to="0"></button>
           <button class="slider-dot active" type="button" role="tab" aria-selected="true" aria-label="Show catalog banner 2" data-slide-to="1"></button>
@@ -82,13 +84,11 @@
         <section class="filters-panel reveal delay-1">
           <label>
             Search
-            <input type="text" id="searchInput" placeholder="Try: Lokwan, Thalipeeth, Nutri Mix" />
+            <input type="text" id="searchInput" placeholder="Try: Lokwan or लोकवन" />
           </label>
           <label>
             Category
-            <select id="categoryFilter">
-              <option value="all">All Categories</option>
-            </select>
+            <select id="categoryFilter"></select>
           </label>
         </section>
 
@@ -110,7 +110,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <strong>Sakas Foods</strong>
+        <strong>Sakas</strong>
         <p>Manufacturer of flours, chapati, spices and mixes</p>
       </div>
       <div>
@@ -125,6 +125,10 @@
   </footer>
 
   <script src="./assets/app.js"></script>
-  <script src="./assets/products.js"></script>
+  <script src="./assets/products.js?v=3"></script>
 </body>
 </html>
+
+
+
+

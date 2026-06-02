@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg: #f7efe5;
   --surface: #ffffff;
   --surface-soft: #fff8f1;
@@ -128,7 +128,6 @@ img {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 4rem 0 3.4rem;
 }
 
 .hero-grid {
@@ -409,8 +408,6 @@ img {
 
 .catalog-banner {
   position: relative;
-  margin-top: 1.35rem;
-  border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
@@ -544,12 +541,14 @@ img {
   padding: 0.95rem;
 }
 
-.product-content h3 {
-  margin-bottom: 0.35rem;
-  font-size: 1.2rem;
-  line-height: 1.25;
+.product-name-local {
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  line-height: 1.35;
+  color: #4f372b;
+  font-family: "Noto Sans Devanagari", "Outfit", sans-serif;
+  font-weight: 600;
 }
-
 .product-info {
   margin-bottom: 0.45rem;
   font-size: 0.92rem;
@@ -772,3 +771,4 @@ img {
     font-size: 0.93rem;
   }
 }
+
