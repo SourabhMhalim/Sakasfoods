@@ -13,18 +13,20 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v6
 
-      - name: Deploy to GoDaddy via SFTP
-        uses: wangyucode/sftp-deploy-action@v2.0.0
+      - name: Deploy to GoDaddy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
-          port: 22
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local_path: ./
-          remote_path: ./public_html/
+          local-dir: ./
+          server-dir: ./public_html/
+          protocol: ftp
+          port: 21
           exclude: |
             .git/
             .github/
             README.md
             .gitignore
             *.md
+          log-level: verbose
