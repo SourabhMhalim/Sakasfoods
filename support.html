@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support | Sakas Foods</title>
+  <meta name="description" content="Contact Sakas Foods for product inquiries, wholesale requirements, and store support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="./index.html">
+        <img class="brand-logo" src="./assets/Logo.jpg" alt="Sakas Foods logo" />
+        <div class="brand-text">
+          <strong>Sakas Foods</strong>
+          <small>Trusted in Pune since 1986</small>
+        </div>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" data-menu-toggle>Menu</button>
+      <nav class="main-nav" data-main-nav>
+        <a href="./index.html">Home</a>
+        <a href="./index.html#all-products">Products</a>
+        <a href="./support.html" class="active">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container support-layout">
+      <section class="support-card reveal">
+        <p class="eyebrow">Customer Support</p>
+        <h1>Need help with product selection or bulk orders?</h1>
+        <p>Share your details and the Sakas team will connect with you shortly.</p>
+        <form
+          id="supportForm"
+          class="support-form"
+          action="https://formsubmit.co/ajax/info@sakasfoods.in"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="New Website Support Request - Sakas Foods" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none" />
+          <label>
+            Full Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Phone Number
+            <input type="tel" name="phone" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Product inquiry, distributor request, support issue..." required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Submit Request</button>
+          <p id="formStatus" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <aside class="store-info reveal delay-1">
+        <div class="support-banner">
+          <img src="./assets/banner3.png" alt="Sakas Foods support banner" />
+        </div>
+        <h2>Store & Contact Details</h2>
+        <p><strong>Patwardhan Baug:</strong> +91 93733 38587</p>
+        <p>15A/4, Behind Shyama Mukherjee Garden, Patwardhan Baug, Pune 411004</p>
+        <p><a class="map-link" href="https://www.google.com/maps/place/SAKAS+Food+Products+-+Registered+Office/@18.5002239,73.8288642,21z/data=!4m15!1m8!3m7!1s0x3bc2bfed837bf049:0xc001a950925f6436!2sPatwardhan+Baug,+Vakil+Nagar,+Erandwane,+Pune,+Maharashtra+411004!3b1!8m2!3d18.5022378!4d73.8299634!16s%2Fg%2F11cjg4mr_5!3m5!1s0x3bc2bfed941177b1:0x48d51103f8cc2b94!8m2!3d18.5002447!4d73.8289034!16s%2Fg%2F1tcyjh6y?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Open Patwardhan Baug Location</a></p>
+        <p><strong>Email:</strong> info@sakasfoods.in</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Sakas Foods</strong>
+        <p>Support available daily</p>
+      </div>
+      <div>
+        <p><strong>Customer Help:</strong> 9 AM - 8 PM</p>
+      </div>
+      <div>
+        <a href="./index.html">Home</a>
+        <a href="./index.html#all-products">Products</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/app.js"></script>
+  <script src="./assets/support.js"></script>
+</body>
+</html>

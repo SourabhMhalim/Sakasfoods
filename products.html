@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | Sakas Foods</title>
+  <meta name="description" content="Browse Sakas Foods products by category with updated pack images and name-based search." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="./index.html">
+        <img class="brand-logo" src="./assets/Logo.jpg" alt="Sakas Foods logo" />
+        <div class="brand-text">
+          <strong>Sakas Foods</strong>
+          <small>Trusted in Pune since 1986</small>
+        </div>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" data-menu-toggle>Menu</button>
+      <nav class="main-nav" data-main-nav>
+        <a href="./index.html">Home</a>
+        <a href="./products.html" class="active">Products</a>
+        <a href="./support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Visual Product Catalog</p>
+        <h1 class="catalog-title">Explore the Sakas Collection</h1>
+        <p class="catalog-subtitle">Search by product name, and view category, pack size, and product details from the latest catalog.</p>
+      </div>
+
+      <section class="catalog-banner reveal delay-1">
+        <img src="./assets/banner2.png" alt="Sakas Foods product banner" />
+      </section>
+
+      <section class="filters-panel reveal delay-1">
+        <label>
+          Search
+          <input type="text" id="searchInput" placeholder="Try: Lokwan, Thalipeeth, Nutri Mix" />
+        </label>
+        <label>
+          Category
+          <select id="categoryFilter">
+            <option value="all">All Categories</option>
+          </select>
+        </label>
+      </section>
+
+      <section id="productStats" class="product-stats" aria-live="polite"></section>
+      <section id="productGrid" class="product-grid"></section>
+      <p id="emptyState" class="empty-state" hidden>No products match your current filters. Try widening your search.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Sakas Foods</strong>
+        <p>Made for daily kitchens and modern stores</p>
+      </div>
+      <div>
+        <p><strong>Visual Catalog:</strong> Updated</p>
+        <p><strong>Name Search:</strong> Enabled</p>
+      </div>
+      <div>
+        <a href="./index.html">Home</a>
+        <a href="./support.html">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/app.js"></script>
+  <script src="./assets/products.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sakas Foods | Premium Flours, Spices and Ready-to-Eat</title>
+  <meta
+    name="description"
+    content="Shop the Sakas Foods range with real product images, quick browsing, and direct support."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="./index.html">
+        <img class="brand-logo" src="./assets/Logo.jpg" alt="Sakas Foods logo" />
+        <div class="brand-text">
+          <strong>Sakas Foods</strong>
+          <small>Trusted in Pune since 1986</small>
+        </div>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" data-menu-toggle>Menu</button>
+      <nav class="main-nav" data-main-nav>
+        <a href="./index.html" class="active">Home</a>
+        <a href="#all-products">Products</a>
+        <a href="./support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <section class="catalog-banner reveal delay-1" data-slider data-slider-delay="1000">
+        <div class="catalog-slides">
+          <div class="catalog-slide" data-slide>
+            <img src="./assets/banner1.png" alt="Sakas Foods catalog banner 1" />
+          </div>
+          <div class="catalog-slide active" data-slide>
+            <img src="./assets/banner2.png" alt="Sakas Foods catalog banner 2" />
+          </div>
+        </div>
+        <div class="catalog-copy">
+          <div class="catalog-copy-inner">
+            <h3>Sakas &ndash; Trusted in Pune Since 1986</h3>
+            <p>
+              Sakas has been a trusted household name in Pune since 1986, known for delivering quality,
+              purity, and authentic taste across generations.
+            </p>
+            <p>
+              We are a manufacturer of flours, chapatis, spices, and food mixes, offering a wide range of
+              products including atta, masalas, namkeen, and traditional Indian foods, all crafted with a
+              strong focus on freshness and consistency.
+            </p>
+          </div>
+        </div>
+        <button class="slider-btn slider-btn-prev" type="button" aria-label="Previous catalog banner" data-prev-slide>&#10094;</button>
+        <button class="slider-btn slider-btn-next" type="button" aria-label="Next catalog banner" data-next-slide>&#10095;</button>
+        <div class="slider-dots" role="tablist" aria-label="Catalog banner selector">
+          <button class="slider-dot" type="button" role="tab" aria-selected="false" aria-label="Show catalog banner 1" data-slide-to="0"></button>
+          <button class="slider-dot active" type="button" role="tab" aria-selected="true" aria-label="Show catalog banner 2" data-slide-to="1"></button>
+        </div>
+      </section>
+      <div class="hero-shape shape-a"></div>
+      <div class="hero-shape shape-b"></div>
+    </section>
+
+    <section class="section" id="all-products">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">All Products</p>
+          <h2 class="catalog-title">Browse Complete Sakas Catalog</h2>
+          <p class="catalog-subtitle">Search by product name, and view category, pack size, and product details from the latest catalog.</p>
+        </div>
+
+        <section class="filters-panel reveal delay-1">
+          <label>
+            Search
+            <input type="text" id="searchInput" placeholder="Try: Lokwan, Thalipeeth, Nutri Mix" />
+          </label>
+          <label>
+            Category
+            <select id="categoryFilter">
+              <option value="all">All Categories</option>
+            </select>
+          </label>
+        </section>
+
+        <section id="productStats" class="product-stats" aria-live="polite"></section>
+        <section id="productGrid" class="product-grid"></section>
+        <p id="emptyState" class="empty-state" hidden>No products match your current filters. Try widening your search.</p>
+      </div>
+    </section>
+
+    <section class="section section-highlight">
+      <div class="container cta-card reveal">
+        <h2>Need Support or Bulk Enquiry?</h2>
+        <p>Connect with Team Sakas for distributor queries, bulk requirements, or product assistance.</p>
+        <a class="btn btn-primary" href="./support.html">Open Support Page</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Sakas Foods</strong>
+        <p>Manufacturer of flours, chapati, spices and mixes</p>
+      </div>
+      <div>
+        <p><strong>Website:</strong> sakasfoods.com</p>
+        <p><strong>Call:</strong> +91 93733 38587</p>
+      </div>
+      <div>
+        <a href="#all-products">Products</a>
+        <a href="./support.html">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/app.js"></script>
+  <script src="./assets/products.js"></script>
+</body>
+</html>
