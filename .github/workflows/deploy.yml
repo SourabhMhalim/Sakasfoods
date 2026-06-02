@@ -13,15 +13,14 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v6
 
-      - name: Deploy to GoDaddy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+      - name: Deploy to GoDaddy via SFTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          ftp-server: sftp://${{ secrets.FTP_SERVER }}:22
+          ftp-username: ${{ secrets.FTP_USERNAME }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
           server-dir: ./public_html/
-          protocol: ftp
           exclude: |
             .git/
             .github/
